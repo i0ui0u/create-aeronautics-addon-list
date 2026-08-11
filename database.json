@@ -9,6 +9,10 @@
             "tags": ["Test tag", "Something else", "PLEASE PUT TAGS THAT ALREADY EXIST OR MAKE NEW ONE"]
         },
 
-    "tags": [],
+    "categories": {
+        "Type": ["Mod", "Resource Pack", "Datapack"],
+        "State": ["Release", "WIP"],
+        "Tags": ["Utility", "Compatibility"]
+    },
     "addons": []
 }
