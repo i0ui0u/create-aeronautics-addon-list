@@ -11,9 +11,8 @@
 
     "categories": {
         "Type": ["Mod", "Resource Pack", "Datapack"],
-        "State": ["Release", "WIP", "Discontinued"],
         "Tags": ["Utility", "Compatibility", "Mechanics", "Social", "Decorations","Port", "Adventure", "Transportation", "Equipment",
-                "Technology"]
+                "Technology", "Storage"]
     },
     "addons": [
         {
@@ -22,7 +21,7 @@
             "modrinth": "https://modrinth.com/mod/analog-audio",
             "curseforge": "",
             "author": "palm1",
-            "tags": ["Mod", "Release","Utility", "Mechanics", "Decorations", "Social"]
+            "tags": ["Mod", "Utility", "Mechanics", "Decorations", "Social"]
         },
         {
             "title": "Grappling Hook Mod: Skybound",
@@ -30,7 +29,7 @@
             "modrinth": "https://modrinth.com/mod/grapplemod-skybound",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/grapplemod-skybound",
             "author": "weaversworkshop",
-            "tags": ["Mod", "Release","Mehcanics", "Port", "Adventure", "Transportation", "Equipment"]
+            "tags": ["Mod", "Mehcanics", "Port", "Transportation", "Equipment"]
         },
         {
             "title":"Create Propulsion: Simulated",
@@ -38,7 +37,39 @@
             "modrinth":"https://modrinth.com/mod/create-propulsion-simulated",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-propulsion-simulated",
             "author":"kyivsec",
-            "tags":["Mod", "Release", "Technology", "Transportation", "Port"]
+            "tags":["Mod", "Technology", "Transportation", "Port"]
+        },
+        {
+            "title":"Simulated Extra",
+            "description":"Very small addon for Simulated/Offroad that adds centered versions of the wheel mounts",
+            "modrinth":"https://modrinth.com/mod/simulated-extra",
+            "curseforge":"",
+            "author":"Gogo",
+            "tags":["Mechanics", "Utility"]
+        },
+        {
+            "title":"SableEdit",
+            "description":"WorldEdit-Sable compatibility.",
+            "modrinth":"https://modrinth.com/mod/sableedit",
+            "curseforge":"",
+            "author":"Malaclord",
+            "tags":["Compatibility"]
+        },
+        {
+            "title":"VS / Sable Hose Connectors",
+            "description":"Better transport between Valkyrien Skies ships & Aeronautics(Sable).",
+            "modrinth":"https://modrinth.com/mod/vs-hose-connectors",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/vs-hose-connectors",
+            "author":"M_K2525",
+            "tags":["Storage", "Utility", "Transportation", "Technology"]
+        },
+        {
+            "title":"Create: Compact Flap",
+            "description":"Adds the Compact Flap Bearing, which combines the functions of the Torsion Spring and Directional Gearshift from the Create: Aeronautics mod",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-compact-flap",
+            "author":"qwxon",
+            "tags":["Utility", "Transportation", "Technology"]
         }
     ]
 }
