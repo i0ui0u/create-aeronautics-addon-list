@@ -418,7 +418,7 @@
                 if (IncludeTags.size > 0) {
                     filtered = filtered.filter(addon => {
                         const tags = addon.tags || [];
-                        return tags.some(t => IncludeTags.has(t));
+                        return [...IncludeTags].every(includeTag => tags.includes(includeTag));
                     });
                 }
 
