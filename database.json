@@ -11,8 +11,8 @@
 
     "categories": {
         "Type": ["Mod", "Resource Pack", "Datapack"],
-        "Tags": ["Utility", "Compatibility", "Mechanics", "Social", "Decorations","Port", "Adventure", "Transportation", "Equipment",
-                "Technology", "Storage", "Other", "Generation", "Tweaks"]
+        "Tags": ["Utility", "Compatibility", "Mechanics", "Decorations", "Port", "Adventure", "Transportation", "Equipment",
+                "Technology", "Storage", "Other", "Generation", "Tweaks", "Weapons", "QoL"]
     },
     "addons": [
         {
@@ -21,7 +21,7 @@
             "modrinth": "https://modrinth.com/mod/analog-audio",
             "curseforge": "",
             "author": "palm1",
-            "tags": ["Mod", "Mechanics", "Decorations", "Social", "Technology"]
+            "tags": ["Mod", "Technology", "Other"]
         },
         {
             "title": "Grappling Hook Mod: Skybound",
@@ -29,7 +29,7 @@
             "modrinth": "https://modrinth.com/mod/grapplemod-skybound",
             "curseforge": "https://www.curseforge.com/minecraft/mc-mods/grapplemod-skybound",
             "author": "weaversworkshop",
-            "tags": ["Mod", "Mehcanics", "Port", "Transportation", "Equipment"]
+            "tags": ["Mod", "Port", "Transportation", "Adventure"]
         },
         {
             "title":"Create Propulsion: Simulated",
@@ -37,7 +37,7 @@
             "modrinth":"https://modrinth.com/mod/create-propulsion-simulated",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-propulsion-simulated",
             "author":"kyivsec",
-            "tags":["Mod", "Technology", "Transportation", "Port"]
+            "tags":["Mod", "Port", "Transportation", "Technology"]
         },
         {
             "title":"Simulated Extra",
@@ -45,7 +45,7 @@
             "modrinth":"https://modrinth.com/mod/simulated-extra",
             "curseforge":"",
             "author":"Gogo",
-            "tags":["Mod", "Technology"]
+            "tags":["Mod", "QoL", "Technology"]
         },
         {
             "title":"SableEdit",
@@ -53,7 +53,7 @@
             "modrinth":"https://modrinth.com/mod/sableedit",
             "curseforge":"",
             "author":"Malaclord",
-            "tags":["Mod", "Compatibility", "Utility"]
+            "tags":["Mod", "Compatibility", "Utility", "QoL"]
         },
         {
             "title":"VS / Sable Hose Connectors",
@@ -61,7 +61,7 @@
             "modrinth":"https://modrinth.com/mod/vs-hose-connectors",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/vs-hose-connectors",
             "author":"M_K2525",
-            "tags":["Mod", "Storage", "Transportation", "Technology"]
+            "tags":["Mod", "Technology", "Transportation", "Storage"]
         },
         {
             "title":"Create: Compact Flap",
@@ -69,7 +69,7 @@
             "modrinth":"",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-compact-flap",
             "author":"qwxon",
-            "tags":["Mod", "Transportation", "Technology"]
+            "tags":["Mod", "Technology", "QoL"]
         },
         {
             "title":"Aeronautics Camera Sync",
@@ -125,7 +125,7 @@
             "modrinth":"https://modrinth.com/datapack/create-simulated-end-sea-everywhere",
             "curseforge":"",
             "author":"Puggicorn",
-            "tags":["Datapack", "Generation", "Adventure", "Utility"]
+            "tags":["Datapack", "Generation", "Adventure"]
         },
         {
             "title":"Copycats+ aeronautics weight",
@@ -133,7 +133,7 @@
             "modrinth":"https://modrinth.com/mod/copycats+-aeronautics-weight",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/copycats-aeronautics-weight",
             "author":"Mc_Orion",
-            "tags":["Mod", "Utility", "Compatibility"]
+            "tags":["Mod", "Compatibility", "Utility"]
         },
         {
             "title":"Climbable Ropes for Create Aeronautics",
@@ -141,7 +141,7 @@
             "modrinth":"https://modrinth.com:8443/mod/create-aeronautics-climbable-rope",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-climbable-ropes",
             "author":"saunhardy",
-            "tags":["Mod", "Utility", "Mechanics", "Tweaks"]
+            "tags":["Mod", "Utility", "Mechanics", "Tweaks", "QoL"]
         },
         {
             "title":"Aeronautic Additions and ChunkLoader",
@@ -149,7 +149,7 @@
             "modrinth":"https://modrinth.com/mod/aeronautic-additions-and-chunkloader",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeronautic-additions-and-chunkloader",
             "author":"DFined",
-            "tags":["Mod", "Technology"]
+            "tags":["Mod", "Technology", "Utility"]
         },
         {
             "title":"Create: Stats & Additions",
@@ -157,7 +157,7 @@
             "modrinth":"https://modrinth.com/mod/create-graphs-stats",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-stats-additions",
             "author":"CobanF8",
-            "tags":["Mod", "Management", "Technology"]
+            "tags":["Mod", "Management", "Technology", "Automatics", "Utility"]
         },
         {
             "title":"Create: Aeroworks",
@@ -165,7 +165,71 @@
             "modrinth":"https://modrinth.com/mod/create-aeroworks",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeroworks",
             "author":"mred231, Glaz_almaz",
-            "tags":["Mod", "Technology"]
+            "tags":["Mod", "Technology", "Utility"]
+        },
+        {
+            "title":"Sable CleanUp",
+            "description":"Find every Sable sub-level on your server — loaded or not — and teleport, freeze, schematic, disassemble, delete it, and view it in 3D from one GUI",
+            "modrinth":"https://modrinth.com/mod/sable-cleanup",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/sable-cleanup",
+            "author":"SwigBox",
+            "tags":["Mod", "Utility", "Management"]
+        },
+        {
+            "title":"Create: The Air War",
+            "description":"This mod was created for aerial vehicles. The main function of the mod was to add more weapons to air transport so that people could create an air war between different factions",
+            "modrinth":"https://modrinth.com/mod/create-the-air-war",
+            "curseforge":"",
+            "author":"sonima, Ether, Delzzi",
+            "tags":["Mod", "Technology", "Weapons"]
+        },
+        {
+            "title":"Create: Automatics",
+            "description":"This addon adds autopilot with Sable constructions, Create Aeronautics, and Create",
+            "modrinth":"https://modrinth.com/mod/create-automatics",
+            "curseforge":"",
+            "author":"sonima, Ether, Delzzi",
+            "tags":["Mod", "Technology", "Management", "Automatics"]
+        },
+        {
+            "title":"Sappy Tree Physics",
+            "description":"Adds physics to cutting down trees powered by Sable",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/sappy-tree-physics",
+            "author":"SappyEddie",
+            "tags":["Mod", "QoL", "Mechanics"]
+        },
+        {
+            "title":"Create Aeronautics: Toolgun",
+            "description":"A Create Aeronautics tool expansion that adds a toolgun-style blueprint system and magnetic field guns for saving, printing, deleting, and manipulating physical craft",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronauticstoolgun",
+            "author":"ENXV233",
+            "tags":["Mod", "Equipment", "Technology"]
+        },
+        {
+            "title":"Synaxis",
+            "description":"Add circuit / luascript infrastructure that runs at full precision/frequency and many utilities to sable",
+            "modrinth":"https://modrinth.com/mod/synaxis/versions",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/synaxis",
+            "author":"Rew1nd",
+            "tags":["Mod", "Technology", "Utility"]
+        },
+        {
+            "title":"Create: Ballast",
+            "description":"Adds a new layerable block that has more mass with each added layer. Useful for balancing your aeronautics builds!",
+            "modrinth":"https://modrinth.com/mod/create-ballast",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-ballast",
+            "author":"Geonegames",
+            "tags":["Mod", "Utility"]
+        },
+        {
+            "title":"Sable Photomancy",
+            "description":"Capture form. Preserve memory. Project reality.",
+            "modrinth":"https://modrinth.com/mod/sable-schematic-tool/versions",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/sable-schematic-tool",
+            "author":"Rew1nd",
+            "tags":["Mod", "Utility", "Equipment"]
         }
     ]
 }
