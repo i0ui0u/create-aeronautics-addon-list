@@ -1,0 +1,446 @@
+<!-- Idk how to properly (advanced level or smth like this, not at all) code, so if anything looks ass - it's ass. If anything works - don't fucking touch it -->
+<!-- If u can make anything better go on, make pull request -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <title>i0ui0u's Aeronautics Addon List</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            color: rgb(224, 224, 224);
+            font-family: "Google Sans Flex", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "ROND" 0;
+            line-height: 1.5em;
+        }
+
+        body {
+            background: rgb(36, 36, 36);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            min-height: 100vh;
+        }
+
+        .main {
+            width: 100%;
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+
+        #page-title {
+            text-align: center;
+            margin-bottom: 1.5em;
+        }
+        #page-title h1 {
+            margin-bottom: -0.3em;
+        }
+
+        /* ----- OBJECT CLASSES ----- */
+
+        .container {
+            background: rgb(51, 51, 51);
+            border: 1px solid rgb(186, 186, 186);
+            border-radius: 0.5em;
+            margin: 1em 0;
+            padding: 0.5em;
+        }
+
+        /* ----- TEXT STYLES ----- */
+
+        .info-text {
+            color: rgb(150,150,150);
+            font-style: italic;
+        }
+        strong {
+            color: rgb(130, 204, 84);
+        }
+        a {
+            color: rgb(73, 141, 214);
+        }
+
+        /* ----- EXPLORE BAR ----- */
+
+        #explore-container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0.5em;
+            padding: 1em;
+        }
+
+        #search-input {
+            background: rgb(41, 41, 41);
+            border: 1px solid rgb(186, 186, 186);
+            border-radius: 0.5em;
+            padding: 0.5em;
+            width: 100%;
+            color: rgb(224, 224, 224);
+            text-align: center;
+        }
+
+        #explore-divider {
+            width: 100%;
+            height: 1px;
+            background: rgb(186, 186, 186);
+            flex-shrink: 0;
+        }
+
+        #explore-right {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            align-items: stretch;
+        }
+
+        .category-row {
+            display: flex;
+            align-items: center;
+            gap: 0.7em;
+            flex-wrap: wrap;
+        }
+
+        .tag-category {
+            font-weight: 500;
+            color: rgb(190,190,190);
+            white-space: nowrap;
+            min-width: 5em;
+        }
+
+        .category-tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3em;
+            align-items: center;
+        }
+
+        /* ----- TAG BUTTONS ----- */
+
+        .tag-button {
+            background: transparent;
+            border: 1px solid rgb(186, 186, 186);
+            color: rgb(224, 224, 224);
+            font-family: inherit;
+            font-size: 0.9em;
+            padding: 0.3em 0.8em;
+            border-radius: 1em;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+            flex: 0 0 auto;
+        }
+        .tag-button.tag-include {
+            border-color: #4caf50;
+            color: #4caf50;
+            background: rgba(76, 175, 80, 0.1);
+        }
+        .tag-button.tag-exclude {
+            border-color: #f44336;
+            color: #f44336;
+            background: rgba(244, 67, 54, 0.1);
+        }
+
+        /* ----- ADDONS GRID ----- */
+
+        #addons-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+            margin-top: 1em;
+        }
+        @media (max-width: 900px) {
+            #addons-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            #addons-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ----- ADDON CARDS ----- */
+
+        .addon-card {
+            background: rgb(51, 51, 51);
+            border: 1px solid rgb(186, 186, 186);
+            border-radius: 0.5em;
+            padding: 0.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4em;
+            height: 280px;
+        }
+
+        .addon-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: -0.5em;
+        }
+
+        .addon-author {
+            color: rgb(150,150,150);
+            font-style: italic;
+            font-size: 0.7em;
+            margin-bottom: -0.3em;
+        }
+
+        .addon-description {
+            color: rgb(200,200,200);
+            margin-bottom: 1em;
+            margin-top: 0.5em;
+        }
+
+        .addon-links {
+    		display: flex;
+    		flex-wrap: wrap;
+   		 	gap: 0.4em;
+   		 	margin-top: auto;
+		}
+
+        .addon-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3em;
+            align-items: center;
+        }
+
+        .tag-badge {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(186, 186, 186, 0.4);
+            color: rgb(200,200,200);
+            padding: 0.15em 0.6em;
+            border-radius: 1em;
+            font-size: 0.8em;
+            font-weight: 400;
+        }
+
+        .link-button {
+    		display: inline-block;
+   			 padding: 0.4em 1em;
+    		border-radius: 0.5em;
+    		font-weight: 600;
+    		text-decoration: none;
+   			color: rgb(224, 224, 224);;
+    		transition: opacity 0.2s;
+    		
+		}
+        .link-button:hover {
+            opacity: 0.85;
+        }
+        .modrinth-button {
+            background: rgba(34, 255, 133, 0.3);
+            border: 1px solid rgba(186, 186, 186, 0.4);
+        }
+        .curseforge-button {
+            background: rgba(235, 98, 43, 0.3);
+            border: 1px solid rgba(186, 186, 186, 0.4);
+        }
+
+        .no-results {
+            text-align: center;
+            color: rgb(158, 158, 158);
+            padding: 2em;
+            font-style: italic;
+            grid-column: 1 / -1;
+        }
+
+        /* ----- MATERIAL ICONS ----- */
+
+        .material-icons {
+            vertical-align: middle;
+            font-size: 1.5em;
+            position: relative;
+            top:-0.1em;
+            margin: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="page-title">
+            <h1>Create: Aeronautics Addon List</h1>
+            <p class="info-text">by i0ui0u_ (on discord)</p>
+        </div>
+
+        <div id="info-container" class="container">
+            <span class="material-icons">info</span>
+            <strong>If you want to contribute</strong>, add an addon to the list, create a pull request on
+            <a href="https://github.com/i0ui0u/create-aeronautics-addon-list">github page</a>
+            <p>Left click tag to include it, right click tag to exclude it from search</p>
+            <p>Note, that this website is really wip and there's a lot more changed to go through, it's all about time</p>
+        </div>
+
+        <div id="explore-container" class="container">
+            <input type="text" id="search-input" placeholder="Search name or @creator" />
+            <div id="explore-divider"></div>
+            <div id="explore-right">
+            	<!-- Place for categories, probally nothing to add here -->
+            </div>
+        </div>
+
+        <div id="addons-container"></div>
+    </div>
+
+    <script>
+        (function() {
+            const SearchInput = document.getElementById("search-input");
+            const ExploreRight = document.getElementById("explore-right");
+            const AddonsContainer = document.getElementById("addons-container");
+
+            let AddonList = [];
+            const IncludeTags = new Set();
+            const ExcludeTags = new Set();
+            const TagButtonsMap = new Map();
+
+            function loadDatabase() {
+                fetch("database.json")
+                    .then(response => {
+                        if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                        return response.json();
+                    })
+                    .then(data => {
+                        const categories = data.categories;
+                        if (!categories || Object.keys(categories).length === 0) {
+                            ExploreRight.innerHTML = '<div class="info-text" style="padding:0.5em;">No categories</div>';
+                            AddonList = data.addons || [];
+                            initAddons();
+                            return;
+                        }
+                        initCategories(categories);
+                        AddonList = data.addons || [];
+                        initAddons();
+                    })
+            }
+
+            function initCategories(categories) {
+                ExploreRight.innerHTML = "";
+                TagButtonsMap.clear();
+
+                for (const [categoryName, tags] of Object.entries(categories)) {
+                    if (!Array.isArray(tags) || tags.length === 0) continue;
+
+                    const row = document.createElement("div");
+                    row.className = "category-row";
+
+                    const titleEl = document.createElement("div");
+                    titleEl.className = "tag-category";
+                    titleEl.textContent = categoryName;
+                    row.appendChild(titleEl);
+
+                    const tagList = document.createElement("div");
+                    tagList.className = "category-tag-list";
+                    row.appendChild(tagList);
+
+                    tags.forEach(tagName => {
+                        const button = document.createElement("button");
+                        button.className = "tag-button";
+                        button.textContent = tagName;
+
+                        button.addEventListener("click", (e) => {
+                            e.preventDefault();
+                            toggleTag(tagName, IncludeTags, ExcludeTags);
+                            updateAllTagButtons();
+                            initAddons();
+                        });
+                        button.addEventListener("contextmenu", (e) => {
+                            e.preventDefault();
+                            toggleTag(tagName, ExcludeTags, IncludeTags);
+                            updateAllTagButtons();
+                            initAddons();
+                        });
+
+                        tagList.appendChild(button);
+                        TagButtonsMap.set(tagName, button);
+                    });
+
+                    ExploreRight.appendChild(row);
+                }
+            }
+
+            function toggleTag(tagName, targetSet, oppositeSet) {
+                if (targetSet.has(tagName)) {
+                    targetSet.delete(tagName);
+                } else {
+                    if (oppositeSet.has(tagName)) {
+                        oppositeSet.delete(tagName);
+                    }
+                    targetSet.add(tagName);
+                }
+            }
+
+            function updateAllTagButtons() {
+                TagButtonsMap.forEach((button, tagName) => {
+                    button.classList.toggle("tag-include", IncludeTags.has(tagName));
+                    button.classList.toggle("tag-exclude", ExcludeTags.has(tagName));
+                });
+            }
+
+            function initAddons() {
+                const RawSearch = SearchInput.value.trim().toLowerCase();
+                const isAuthorSearch = RawSearch.startsWith("@");
+                const searchQuery = isAuthorSearch ? RawSearch.substring(1) : RawSearch;
+
+                let filtered = AddonList.filter(addon => {
+                    if (RawSearch === "" || (isAuthorSearch && searchQuery === "")) return true;
+                    if (isAuthorSearch) {
+                        return (addon.author || "").toLowerCase().includes(searchQuery);
+                    }
+                    return (addon.title || "").toLowerCase().includes(searchQuery);
+                });
+
+                if (IncludeTags.size > 0) {
+                    filtered = filtered.filter(addon => {
+                        const tags = addon.tags || [];
+                        return tags.some(t => IncludeTags.has(t));
+                    });
+                }
+
+                filtered = filtered.filter(addon => {
+                    const tags = addon.tags || [];
+                    return !tags.some(t => ExcludeTags.has(t));
+                });
+
+                if (filtered.length === 0) {
+                    AddonsContainer.innerHTML = '<div class="no-results">Nothing found</div>';
+                    return;
+                }
+
+                AddonsContainer.innerHTML = filtered.map(addon => {
+                    const tags = addon.tags || [];
+                    const modrinth = addon.modrinth?.trim() || "";
+                    const curseforge = addon.curseforge?.trim() || "";
+                    return `
+                        <div class="addon-card">
+                            <div class="addon-title">${addon.title}</div>
+                            ${addon.author ? `<div class="addon-author">by @${addon.author}</div>` : ""}
+                            ${tags.length ? `<div class="addon-tags">${tags.map(t => `<span class="tag-badge">${t}</span>`).join("")}</div>` : ""}
+                            ${addon.description ? `<div class="addon-description">${addon.description}</div>` : ""}
+                            ${(modrinth || curseforge) ? `<div class="addon-links">${modrinth ? `<a class="link-button modrinth-button" href="${modrinth}" target="_blank" rel="noopener noreferrer">Modrinth</a>` : ""}${curseforge ? `<a class="link-button curseforge-button" href="${curseforge}" target="_blank" rel="noopener noreferrer">CurseForge</a>` : ""}</div>` : ""}
+                        </div>`;
+                }).join("");
+            }
+
+            SearchInput.addEventListener("input", initAddons);
+            loadDatabase();
+        })();
+    </script>
+</body>
+</html>
