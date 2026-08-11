@@ -12,7 +12,7 @@
     "categories": {
         "Type": ["Mod", "Resource Pack", "Datapack"],
         "Tags": ["Utility", "Compatibility", "Mechanics", "Social", "Decorations","Port", "Adventure", "Transportation", "Equipment",
-                "Technology", "Storage"]
+                "Technology", "Storage", "Other"]
     },
     "addons": [
         {
@@ -77,7 +77,7 @@
             "modrinth":"https://modrinth.com/mod/aero_cam_sync",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeronautics-camera-sync",
             "author":"playsi, MrLemonHog",
-            "tags":["Mod", "Release", "Utility", "Mechanics"]
+            "tags":["Mod", "Utility", "Mechanics"]
         },
         {
             "title":"[Aeronautics] Unique Small Tires Pack",
