@@ -1,4 +1,4 @@
-<!-- Idk how to properly (advanched level or smth like this, not at all) code, so if anything looks ass - it's ass. If anything works - don't fucking touch it -->
+<!-- Idk how to properly (advanced level or smth like this, not at all) code, so if anything looks ass - it's ass. If anything works - don't fucking touch it -->
 <!-- If u can make anything better go on, make pull request -->
 
 <!DOCTYPE html>
@@ -53,9 +53,6 @@
             margin-bottom: -0.3em;
         }
 
-        #info-container {
-        }
-
         /* ----- OBJECT CLASSES ----- */
 
         .container {
@@ -82,36 +79,57 @@
         /* ----- EXPLORE BAR ----- */
 
         #explore-container {
-    		display: flex;
-    		flex-direction: column;
-    		align-items: stretch;
-    		gap: 0.5em;
-    		padding: 1em;
-		}
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0.5em;
+            padding: 1em;
+        }
 
         #search-input {
-   			background: rgb(41, 41, 41);
-    		border: 1px solid rgb(186, 186, 186);
-    		border-radius: 0.5em;
-    		padding: 0.5em;
-    		width: 100%;
-    		color: rgb(224, 224, 224);
-    		text-align: center;
-		}
+            background: rgb(41, 41, 41);
+            border: 1px solid rgb(186, 186, 186);
+            border-radius: 0.5em;
+            padding: 0.5em;
+            width: 100%;
+            color: rgb(224, 224, 224);
+            text-align: center;
+        }
 
         #explore-divider {
-    		width: 100%;
-    		height: 1px;
-    		background: rgb(186, 186, 186);
-    		flex-shrink: 0;
-		}
+            width: 100%;
+            height: 1px;
+            background: rgb(186, 186, 186);
+            flex-shrink: 0;
+        }
 
         #explore-right {
-    		display: flex;
-    		flex-wrap: wrap;
-    		gap: 0.3em;
-    		align-items: center;
-		}
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            align-items: stretch;
+        }
+
+        .category-row {
+            display: flex;
+            align-items: center;
+            gap: 0.7em;
+            flex-wrap: wrap;
+        }
+
+        .tag-category {
+            font-weight: 500;
+            color: rgb(190,190,190);
+            white-space: nowrap;
+            min-width: 5em;
+        }
+
+        .category-tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3em;
+            align-items: center;
+        }
 
         /* ----- TAG BUTTONS ----- */
 
@@ -161,46 +179,46 @@
         /* ----- ADDON CARDS ----- */
 
         .addon-card {
-        	background: rgb(51, 51, 51);
-    		border: 1px solid rgb(186, 186, 186);
-    		border-radius: 0.5em;
-    		padding: 0.5em;
-    		display: flex;
-    		flex-direction: column;
-    		gap: 0.4em;
+            background: rgb(51, 51, 51);
+            border: 1px solid rgb(186, 186, 186);
+            border-radius: 0.5em;
+            padding: 0.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4em;
         }
 
         .addon-title {
-        	font-size: 1.4em;
-        	font-weight: 700;
-        	margin-bottom: -0.5em;
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: -0.5em;
         }
 
         .addon-author {
-        	color: rgb(150,150,150);
-    		font-style: italic;
-    		font-size: 0.7em;
-    		margin-bottom: -0.3em;
+            color: rgb(150,150,150);
+            font-style: italic;
+            font-size: 0.7em;
+            margin-bottom: -0.3em;
         }
 
         .addon-description {
-        	color: rgb(200,200,200);
-        	margin-bottom: 1em;
-        	margin-top: 0.5em;
+            color: rgb(200,200,200);
+            margin-bottom: 1em;
+            margin-top: 0.5em;
         }
 
         .addon-links {
-        	display: flex;
-        	flex-wrap: wrap;
-        	gap: 0.4em;
-        	margin-top: 0.2em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4em;
+            margin-top: 0.2em;
         }
 
         .addon-tags {
-        	display: flex;
-    		flex-wrap: wrap;
-    		gap: 0.3em;
-    		align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3em;
+            align-items: center;
         }
 
         .tag-badge {
@@ -244,7 +262,7 @@
 
         /* ----- MATERIAL ICONS ----- */
 
-    	.material-icons {
+        .material-icons {
             vertical-align: middle;
             font-size: 1.5em;
             position: relative;
@@ -267,11 +285,11 @@
         </div>
 
         <div id="explore-container" class="container">
-            <div id="explore-left">
-                <input type="text" id="search-input" placeholder="Search name or @creator" />
-            </div>
+            <input type="text" id="search-input" placeholder="Search name or @creator" />
             <div id="explore-divider"></div>
-            <div id="explore-right"></div>
+            <div id="explore-right">
+            	<!-- Place for categories, probally nothing to add here -->
+            </div>
         </div>
 
         <div id="addons-container"></div>
@@ -284,85 +302,113 @@
             const AddonsContainer = document.getElementById("addons-container");
 
             let AddonList = [];
-            let TagList = [];
             const IncludeTags = new Set();
             const ExcludeTags = new Set();
+            const TagButtonsMap = new Map();
 
             function loadDatabase() {
                 fetch("database.json")
                     .then(response => {
-                        if (!response.ok) throw new Error("database.json not found or contains error");
+                        if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                         return response.json();
                     })
                     .then(data => {
+                        const categories = data.categories;
+                        if (!categories || Object.keys(categories).length === 0) {
+                            ExploreRight.innerHTML = '<div class="info-text" style="padding:0.5em;">No categories</div>';
+                            AddonList = data.addons || [];
+                            initAddons();
+                            return;
+                        }
+                        initCategories(categories);
                         AddonList = data.addons || [];
-                        TagList = data.tags || [];
-                        initTags();
                         initAddons();
                     })
-                    .catch(error => {
-                        console.error(error);
-                        AddonsContainer.innerHTML = '<div class="no-results">Can\'t load database</div>';
-                    });
             }
 
-            function initTags() {
-                ExploreRight.innerHTML = '';
-                TagList.forEach(tagName => {
-                    const button = document.createElement("button");
-                    button.className = 'tag-button';
-                    button.textContent = tagName;
-                    button.addEventListener('click', event => {
-                        event.preventDefault();
-                        toggleTag(tagName, IncludeTags, ExcludeTags);
-                        updateTagButton(button, tagName);
-                        initAddons();
+            function initCategories(categories) {
+                ExploreRight.innerHTML = "";
+                TagButtonsMap.clear();
+
+                for (const [categoryName, tags] of Object.entries(categories)) {
+                    if (!Array.isArray(tags) || tags.length === 0) continue;
+
+                    const row = document.createElement("div");
+                    row.className = "category-row";
+
+                    const titleEl = document.createElement("div");
+                    titleEl.className = "tag-category";
+                    titleEl.textContent = categoryName;
+                    row.appendChild(titleEl);
+
+                    const tagList = document.createElement("div");
+                    tagList.className = "category-tag-list";
+                    row.appendChild(tagList);
+
+                    tags.forEach(tagName => {
+                        const button = document.createElement("button");
+                        button.className = "tag-button";
+                        button.textContent = tagName;
+
+                        button.addEventListener("click", (e) => {
+                            e.preventDefault();
+                            toggleTag(tagName, IncludeTags, ExcludeTags);
+                            updateAllTagButtons();
+                            initAddons();
+                        });
+                        button.addEventListener("contextmenu", (e) => {
+                            e.preventDefault();
+                            toggleTag(tagName, ExcludeTags, IncludeTags);
+                            updateAllTagButtons();
+                            initAddons();
+                        });
+
+                        tagList.appendChild(button);
+                        TagButtonsMap.set(tagName, button);
                     });
-                    button.addEventListener('contextmenu', event => {
-                        event.preventDefault();
-                        toggleTag(tagName, ExcludeTags, IncludeTags);
-                        updateTagButton(button, tagName);
-                        initAddons();
-                    });
-                    ExploreRight.appendChild(button);
-                });
+
+                    ExploreRight.appendChild(row);
+                }
             }
 
             function toggleTag(tagName, targetSet, oppositeSet) {
                 if (targetSet.has(tagName)) {
                     targetSet.delete(tagName);
-                } else if (oppositeSet.has(tagName)) {
-                    oppositeSet.delete(tagName);
-                    targetSet.add(tagName);
                 } else {
+                    if (oppositeSet.has(tagName)) {
+                        oppositeSet.delete(tagName);
+                    }
                     targetSet.add(tagName);
                 }
             }
 
-            function updateTagButton(button, tagName) {
-                button.classList.toggle('tag-include', IncludeTags.has(tagName));
-                button.classList.toggle('tag-exclude', ExcludeTags.has(tagName));
+            function updateAllTagButtons() {
+                TagButtonsMap.forEach((button, tagName) => {
+                    button.classList.toggle("tag-include", IncludeTags.has(tagName));
+                    button.classList.toggle("tag-exclude", ExcludeTags.has(tagName));
+                });
             }
 
             function initAddons() {
                 const RawSearch = SearchInput.value.trim().toLowerCase();
-                const isAuthorSearch = RawSearch.startsWith('@');
+                const isAuthorSearch = RawSearch.startsWith("@");
                 const searchQuery = isAuthorSearch ? RawSearch.substring(1) : RawSearch;
 
                 let filtered = AddonList.filter(addon => {
-                    if (RawSearch === '' || (isAuthorSearch && searchQuery === '')) return true;
+                    if (RawSearch === "" || (isAuthorSearch && searchQuery === "")) return true;
                     if (isAuthorSearch) {
-                        return (addon.author || '').toLowerCase().includes(searchQuery);
+                        return (addon.author || "").toLowerCase().includes(searchQuery);
                     }
-                    return (addon.title || '').toLowerCase().includes(searchQuery);
+                    return (addon.title || "").toLowerCase().includes(searchQuery);
                 });
 
-                if (IncludeTags.size) {
+                if (IncludeTags.size > 0) {
                     filtered = filtered.filter(addon => {
                         const tags = addon.tags || [];
                         return tags.some(t => IncludeTags.has(t));
                     });
                 }
+
                 filtered = filtered.filter(addon => {
                     const tags = addon.tags || [];
                     return !tags.some(t => ExcludeTags.has(t));
@@ -375,22 +421,20 @@
 
                 AddonsContainer.innerHTML = filtered.map(addon => {
                     const tags = addon.tags || [];
-                    const modrinth = addon.modrinth?.trim() || '';
-                    const curseforge = addon.curseforge?.trim() || '';
+                    const modrinth = addon.modrinth?.trim() || "";
+                    const curseforge = addon.curseforge?.trim() || "";
                     return `
                         <div class="addon-card">
                             <div class="addon-title">${addon.title}</div>
-                            ${addon.author ? `<div class="addon-author">by @${addon.author}</div>` : ''}
-                            ${tags.length ? `<div class="addon-tags">${tags.map(t => `<span class="tag-badge">${t}</span>`).join('')}</div>` : ''}
-                            ${addon.description ? `<div class="addon-description">${addon.description}</div>` : ''}
-                            
-                            ${(modrinth || curseforge) ? `<div class="addon-links">${modrinth ? `<a class="link-button modrinth-button" href="${modrinth}" target="_blank" rel="noopener noreferrer">Modrinth</a>` : ''}${curseforge ? `<a class="link-button curseforge-button" href="${curseforge}" target="_blank" rel="noopener noreferrer">CurseForge</a>` : ''}</div>` : ''}
+                            ${addon.author ? `<div class="addon-author">by @${addon.author}</div>` : ""}
+                            ${tags.length ? `<div class="addon-tags">${tags.map(t => `<span class="tag-badge">${t}</span>`).join("")}</div>` : ""}
+                            ${addon.description ? `<div class="addon-description">${addon.description}</div>` : ""}
+                            ${(modrinth || curseforge) ? `<div class="addon-links">${modrinth ? `<a class="link-button modrinth-button" href="${modrinth}" target="_blank" rel="noopener noreferrer">Modrinth</a>` : ""}${curseforge ? `<a class="link-button curseforge-button" href="${curseforge}" target="_blank" rel="noopener noreferrer">CurseForge</a>` : ""}</div>` : ""}
                         </div>`;
-                }).join('');
+                }).join("");
             }
 
-            SearchInput.addEventListener('input', initAddons);
-
+            SearchInput.addEventListener("input", initAddons);
             loadDatabase();
         })();
     </script>
