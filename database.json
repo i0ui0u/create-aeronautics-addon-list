@@ -230,6 +230,62 @@
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/sable-schematic-tool",
             "author":"Rew1nd",
             "tags":["Mod", "Utility", "Equipment"]
+        },
+        {
+            "title":"Create: Linear Bearing",
+            "description":"This mod adds a working linear bearing for Create Aeronautics",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-linear-bearing",
+            "author":"StivenNob",
+            "tags":["Mod", "Technology"]
+        },
+        {
+            "title":"Create Deep Seas",
+            "description":"Submarine in Create Aeronautics!",
+            "modrinth":"https://modrinth.com/mod/create-deep-seas",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-deep-seas",
+            "author":"MaxCreateMC, Official_Cogfly, daileta, replinsy",
+            "tags":["Mod", "Technology", "Mechanics", "Adventure", "Generation"]
+        },
+        {
+            "title":"Create Aeronautics Structures",
+            "description":"This mod adds realistic-looking structures built from Create and Create: Aeronautics blocks to Minecraft 1.21.1. These include ruined engineering buildings, abandoned boats, floating airships, and hot air balloons",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-structures",
+            "author":"pael1as88592",
+            "tags":["Mod", "Generation", "Adventure"]
+        },
+        {
+            "title":"Create Aeronautics Structures",
+            "description":"Adds structures to create aeronautics.",
+            "modrinth":"https://modrinth.com/mod/aeronautics-structures",
+            "curseforge":"",
+            "author":"Crazy10061",
+            "tags":["Mod", "Generation", "Adventure"]
+        },
+        {
+            "title":"Create Aeronautics: Throwable Rope Connector",
+            "description":"Create Aeronautics: Throwable Rope Connector is a small quality-of-life addon for Create Aeronautics / Create Simulated that makes docking with rope possible",
+            "modrinth":"https://modrinth.com/mod/create-aeronautics-throwable-rope-connector",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-throwable-rope-connector",
+            "author":"sprocket.",
+            "tags":["Mod", "Utility", "Equipment"]
+        },
+        {
+            "title":"Create Aeronautics Discovery",
+            "description":"A mod to add world generated structures to the Create Aeronautics",
+            "modrinth":"https://modrinth.com/mod/create-aeronautics-discovery",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-discovery",
+            "author":"Corvinoo, mochibit",
+            "tags":["Mod", "Adventure", "Generation"]
+        },
+        {
+            "title":"Create: Coasters Simulated",
+            "description":"Build real rollercoasters with physics, loops, and jumps in this add-on for the Create mod",
+            "modrinth":"https://modrinth.com/mod/create-coasters-simulated",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-coasters-simulated",
+            "author":"SilverGold",
+            "tags":["Mod", "Technology", "Transportation"]
         }
     ]
 }
