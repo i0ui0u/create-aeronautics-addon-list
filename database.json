@@ -1,18 +1,19 @@
 {
     "_important": "Before creating pull request, please, make sure not to insert anything into modrinth/curseforge link if you have no link for it. Tags are list of strings (tags themselves)",
     "_example addon": {
-            "title": "My addon",
-            "description": "this addon is quite awesome",
-            "modrinth": "",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics",
-            "author": "guy",
-            "tags": ["Test tag", "Something else", "PLEASE PUT TAGS THAT ALREADY EXIST OR MAKE NEW ONE"]
+            "title":"",
+            "description":"",
+            "modrinth":"",
+            "curseforge":"",
+            "author":"",
+            "tags":[]
         },
 
     "categories": {
         "Type": ["Mod", "Resource Pack", "Datapack"],
-        "State": ["Release", "WIP"],
-        "Tags": ["Utility", "Compatibility", "Mechanics", "Social", "Decorations"]
+        "State": ["Release", "WIP", "Discontinued"],
+        "Tags": ["Utility", "Compatibility", "Mechanics", "Social", "Decorations","Port", "Adventure", "Transportation", "Equipment",
+                "Technology"]
     },
     "addons": [
         {
@@ -22,5 +23,22 @@
             "curseforge": "",
             "author": "palm1",
             "tags": ["Mod", "Release","Utility", "Mechanics", "Decorations", "Social"]
-        }]
+        },
+        {
+            "title": "Grappling Hook Mod: Skybound",
+            "description": "Grapple onto Create contraptions, Sable airships, and everything in between. Classic grappling hook physics, modernized for Fabric & NeoForge 1.21.1+",
+            "modrinth": "https://modrinth.com/mod/grapplemod-skybound",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/grapplemod-skybound",
+            "author": "weaversworkshop",
+            "tags": ["Mod", "Release","Mehcanics", "Port", "Adventure", "Transportation", "Equipment"]
+        },
+        {
+            "title":"Create Propulsion: Simulated",
+            "description":"Port of Create: Propulsion mod to NeoForge 1.21.1 with support of Sable and Create: Aeronautics",
+            "modrinth":"https://modrinth.com/mod/create-propulsion-simulated",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-propulsion-simulated",
+            "author":"kyivsec",
+            "tags":["Mod", "Release", "Technology", "Transportation", "Port"]
+        }
+    ]
 }
