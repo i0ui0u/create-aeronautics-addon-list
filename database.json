@@ -12,7 +12,15 @@
     "categories": {
         "Type": ["Mod", "Resource Pack", "Datapack"],
         "State": ["Release", "WIP"],
-        "Tags": ["Utility", "Compatibility"]
+        "Tags": ["Utility", "Compatibility", "Mechanics", "Social", "Decorations"]
     },
-    "addons": []
+    "addons": [
+        {
+            "title":"Analog Audio",
+            "description": "Bring the warm comfort of analog audio mediums to your world! Integrates with Create Aeronautics, Sable, Voice Chat, and more!",
+            "modrinth": "https://modrinth.com/mod/analog-audio",
+            "curseforge": "",
+            "author": "palm1",
+            "tags": ["Mod", "Release","Utility", "Mechanics", "Decorations", "Social"]
+        }]
 }
