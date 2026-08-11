@@ -70,6 +70,14 @@
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-compact-flap",
             "author":"qwxon",
             "tags":["Utility", "Transportation", "Technology"]
+        },
+        {
+            "title":"Aeronautics Camera Sync",
+            "description":"Adds a dynamic camera tilt for the contraption from the Create Aeronautics mod",
+            "modrinth":"https://modrinth.com/mod/aero_cam_sync",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeronautics-camera-sync",
+            "author":"playsi, MrLemonHog",
+            "tags":["Mod", "Release", "Utility", "Mechanics"]
         }
     ]
 }
