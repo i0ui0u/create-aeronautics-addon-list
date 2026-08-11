@@ -21,7 +21,7 @@
     <style>
         * {
             box-sizing: border-box;
-            padding: 0;
+            padding: 0; 
             margin: 0;
             color: rgb(224, 224, 224);
             font-family: "Google Sans Flex", sans-serif;
@@ -292,6 +292,7 @@
             <a href="https://github.com/i0ui0u/create-aeronautics-addon-list">github page</a>
             <p>Left click tag to include it, right click tag to exclude it from search</p>
             <p>Note, that this website is really wip and there's a lot more changed to go through, it's all about time</p>
+            <p id="addons-count"></p>
         </div>
 
         <div id="explore-container" class="container">
@@ -310,6 +311,7 @@
             const SearchInput = document.getElementById("search-input");
             const ExploreRight = document.getElementById("explore-right");
             const AddonsContainer = document.getElementById("addons-container");
+            const InfoContainer = document.getElementById("info-container")
 
             let AddonList = [];
             const IncludeTags = new Set();
@@ -327,11 +329,13 @@
                         if (!categories || Object.keys(categories).length === 0) {
                             ExploreRight.innerHTML = '<div class="info-text" style="padding:0.5em;">No categories</div>';
                             AddonList = data.addons || [];
+
                             initAddons();
                             return;
                         }
                         initCategories(categories);
                         AddonList = data.addons || [];
+                        displayAddonAmount(data.addons);
                         initAddons();
                     })
             }
@@ -442,6 +446,12 @@
                             ${(modrinth || curseforge) ? `<div class="addon-links">${modrinth ? `<a class="link-button modrinth-button" href="${modrinth}" target="_blank" rel="noopener noreferrer">Modrinth</a>` : ""}${curseforge ? `<a class="link-button curseforge-button" href="${curseforge}" target="_blank" rel="noopener noreferrer">CurseForge</a>` : ""}</div>` : ""}
                         </div>`;
                 }).join("");
+            }
+
+            function displayAddonAmount(list) {
+                AddonsCount = document.getElementById("addons-count");
+                AddonsCount.innerHTML = `Addons listed: ${list.length}`;
+                
             }
 
             SearchInput.addEventListener("input", initAddons);
