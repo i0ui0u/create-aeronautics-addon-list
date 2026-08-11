@@ -272,6 +272,14 @@
             "tags":["Mod", "Utility", "Equipment"]
         },
         {
+            "title":"AMBUSH",
+            "description":"Adds data driven encounters, with optional compatibility with Create Aeronautics and Create Big Cannons",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/ambush",
+            "author":"TiyunSol",
+            "tags":["Mod", "Adventure", "Utility"]
+        },
+        {
             "title":"Create Aeronautics Discovery",
             "description":"A mod to add world generated structures to the Create Aeronautics",
             "modrinth":"https://modrinth.com/mod/create-aeronautics-discovery",
