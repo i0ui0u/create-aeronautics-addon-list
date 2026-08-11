@@ -12,7 +12,7 @@
     "categories": {
         "Type": ["Mod", "Resource Pack", "Datapack"],
         "Tags": ["Utility", "Compatibility", "Mechanics", "Social", "Decorations","Port", "Adventure", "Transportation", "Equipment",
-                "Technology", "Storage", "Other"]
+                "Technology", "Storage", "Other", "Generation", "Tweaks"]
     },
     "addons": [
         {
@@ -21,7 +21,7 @@
             "modrinth": "https://modrinth.com/mod/analog-audio",
             "curseforge": "",
             "author": "palm1",
-            "tags": ["Mod", "Utility", "Mechanics", "Decorations", "Social"]
+            "tags": ["Mod", "Mechanics", "Decorations", "Social", "Technology"]
         },
         {
             "title": "Grappling Hook Mod: Skybound",
@@ -45,7 +45,7 @@
             "modrinth":"https://modrinth.com/mod/simulated-extra",
             "curseforge":"",
             "author":"Gogo",
-            "tags":["Mechanics", "Utility"]
+            "tags":["Mod", "Technology"]
         },
         {
             "title":"SableEdit",
@@ -53,7 +53,7 @@
             "modrinth":"https://modrinth.com/mod/sableedit",
             "curseforge":"",
             "author":"Malaclord",
-            "tags":["Compatibility"]
+            "tags":["Mod", "Compatibility", "Utility"]
         },
         {
             "title":"VS / Sable Hose Connectors",
@@ -61,7 +61,7 @@
             "modrinth":"https://modrinth.com/mod/vs-hose-connectors",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/vs-hose-connectors",
             "author":"M_K2525",
-            "tags":["Storage", "Utility", "Transportation", "Technology"]
+            "tags":["Mod", "Storage", "Transportation", "Technology"]
         },
         {
             "title":"Create: Compact Flap",
@@ -69,7 +69,7 @@
             "modrinth":"",
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-compact-flap",
             "author":"qwxon",
-            "tags":["Utility", "Transportation", "Technology"]
+            "tags":["Mod", "Transportation", "Technology"]
         },
         {
             "title":"Aeronautics Camera Sync",
@@ -102,6 +102,70 @@
             "curseforge":"https://www.curseforge.com/minecraft/texture-packs/bare-metals-x-create-aeronautics",
             "author":"ludo_silver_",
             "tags":["Resource Pack", "Other"]
+        },
+        {
+            "title":"Create: Hangars (Aeronautics)",
+            "description":"An addon for Create: Aeronautics that adds procedurally generated hangars to your world",
+            "modrinth":"https://modrinth.com/datapack/create-hangars",
+            "curseforge":"",
+            "author":"Igor-Gaming",
+            "tags":["Datapack", "Generation", "Adventure"]
+        },
+        {
+            "title":"Aeronautics mass for SAB",
+            "description":"Datapack. Applies masses from Create:Aeronautics to blocks from Steel Armor Blocks",
+            "modrinth":"https://modrinth.com/datapack/aero-mass-sab",
+            "curseforge":"https://www.curseforge.com/minecraft/data-packs/aeronautics-mass-for-sab",
+            "author":"minucios",
+            "tags":["Datapack", "Compatibility", "Utility"]
+        },
+        {
+            "title":"Create Simulated: End Sea Everywhere",
+            "description":"Bare bones datapack that adds the End Sea from create simulated to other dimensions. Useful for Skyblock style modpacks",
+            "modrinth":"https://modrinth.com/datapack/create-simulated-end-sea-everywhere",
+            "curseforge":"",
+            "author":"Puggicorn",
+            "tags":["Datapack", "Generation", "Adventure", "Utility"]
+        },
+        {
+            "title":"Copycats+ aeronautics weight",
+            "description":"Adds kpg for create aeronautics for copycat blocks",
+            "modrinth":"https://modrinth.com/mod/copycats+-aeronautics-weight",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/copycats-aeronautics-weight",
+            "author":"Mc_Orion",
+            "tags":["Mod", "Utility", "Compatibility"]
+        },
+        {
+            "title":"Climbable Ropes for Create Aeronautics",
+            "description":"Adds an empty-hand climb mode for vertical ropes in Create Aeronautics. Right-click with bare hands to grab on, W/S to climb, Space to jump off, Sneak to let go. Works for Plunger Launcher too",
+            "modrinth":"https://modrinth.com:8443/mod/create-aeronautics-climbable-rope",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-climbable-ropes",
+            "author":"saunhardy",
+            "tags":["Mod", "Utility", "Mechanics", "Tweaks"]
+        },
+        {
+            "title":"Aeronautic Additions and ChunkLoader",
+            "description":"A mod where I will add stuff I feel create like Create Aeronautics is missing",
+            "modrinth":"https://modrinth.com/mod/aeronautic-additions-and-chunkloader",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeronautic-additions-and-chunkloader",
+            "author":"DFined",
+            "tags":["Mod", "Technology"]
+        },
+        {
+            "title":"Create: Stats & Additions",
+            "description":"Graphs and additions for your Factories and many more",
+            "modrinth":"https://modrinth.com/mod/create-graphs-stats",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-stats-additions",
+            "author":"CobanF8",
+            "tags":["Mod", "Management", "Technology"]
+        },
+        {
+            "title":"Create: Aeroworks",
+            "description":"A collection of addons for Create Aeronautics with blocks such as the gyroscope, joystick, and more!",
+            "modrinth":"https://modrinth.com/mod/create-aeroworks",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeroworks",
+            "author":"mred231, Glaz_almaz",
+            "tags":["Mod", "Technology"]
         }
     ]
 }
