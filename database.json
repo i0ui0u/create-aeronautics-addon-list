@@ -1,0 +1,14 @@
+{
+    "_important": "Before creating pull request, please, make sure not to insert anything into modrinth/curseforge link if you have no link for it. Tags are list of strings (tags themselves)",
+    "_example addon": {
+            "title": "My addon",
+            "description": "this addon is quite awesome",
+            "modrinth": "",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics",
+            "author": "guy",
+            "tags": ["Test tag", "Something else", "PLEASE PUT TAGS THAT ALREADY EXIST OR MAKE NEW ONE"]
+        },
+
+    "tags": [],
+    "addons": []
+}
