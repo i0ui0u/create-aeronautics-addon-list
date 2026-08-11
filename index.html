@@ -147,13 +147,13 @@
             flex: 0 0 auto;
         }
         .tag-button.tag-include {
-            border-color: #4caf50;
-            color: #4caf50;
+            border-color: rgb(76, 175, 80);
+            color: rgb(76, 175, 80);
             background: rgba(76, 175, 80, 0.1);
         }
         .tag-button.tag-exclude {
             border-color: #f44336;
-            color: #f44336;
+            color: rgb(244, 67, 54);
             background: rgba(244, 67, 54, 0.1);
         }
 
@@ -230,6 +230,12 @@
             border-radius: 1em;
             font-size: 0.8em;
             font-weight: 400;
+        }
+
+        .mod-tag {
+            border-color: rgb(232, 203, 97);
+            color: rgb(232, 203, 97);
+            background: rgba(232, 203, 97, 0.1);
         }
 
         .link-button {
@@ -431,7 +437,7 @@
                         <div class="addon-card">
                             <div class="addon-title">${addon.title}</div>
                             ${addon.author ? `<div class="addon-author">by @${addon.author}</div>` : ""}
-                            ${tags.length ? `<div class="addon-tags">${tags.map(t => `<span class="tag-badge">${t}</span>`).join("")}</div>` : ""}
+                            ${tags.length ? `<div class="addon-tags">${tags.map(t => `<span class="tag-badge ${["Mod","Resource Pack", "Datapack"].includes(t) ? "mod-tag" : ""}">${t}</span>`).join("")}</div>` : ""}
                             ${addon.description ? `<div class="addon-description">${addon.description}</div>` : ""}
                             ${(modrinth || curseforge) ? `<div class="addon-links">${modrinth ? `<a class="link-button modrinth-button" href="${modrinth}" target="_blank" rel="noopener noreferrer">Modrinth</a>` : ""}${curseforge ? `<a class="link-button curseforge-button" href="${curseforge}" target="_blank" rel="noopener noreferrer">CurseForge</a>` : ""}</div>` : ""}
                         </div>`;
