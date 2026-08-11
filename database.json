@@ -78,6 +78,30 @@
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeronautics-camera-sync",
             "author":"playsi, MrLemonHog",
             "tags":["Mod", "Release", "Utility", "Mechanics"]
+        },
+        {
+            "title":"[Aeronautics] Unique Small Tires Pack",
+            "description":"Changes the small tire model from \"Create Aeronautics\" to various type wheels",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/texture-packs/aeronautics-classic-type-to-small-tire",
+            "author":"boulterie",
+            "tags":["Resource Pack", "Other"]
+        },
+        {
+            "title":"[Aeronautics] No Suspension",
+            "description":"Removes the suspension spring from the wheel mount in the Create Aeronautics mod",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/texture-packs/aeronautics-no-suspension",
+            "author":"boulterie",
+            "tags":["Resource Pack", "Other"]
+        },
+        {
+            "title":"Bare Metals x Create Aeronautics",
+            "description":"Bare Bones textures for Create Aeronautics ! ☁️",
+            "modrinth":"https://modrinth.com/resourcepack/bare-metals-x-create-aeronautics",
+            "curseforge":"https://www.curseforge.com/minecraft/texture-packs/bare-metals-x-create-aeronautics",
+            "author":"ludo_silver_",
+            "tags":["Resource Pack", "Other"]
         }
     ]
 }
