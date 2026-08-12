@@ -286,6 +286,31 @@
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-coasters-simulated",
             "author":"SilverGold",
             "tags":["Mod", "Technology", "Transportation"]
+        },
+        {
+            "title":"Create: Avionics",
+            "description":"ComputerCraft peripherals for Create: Simulated and Create: Aeronautics",
+            "modrinth":"https://modrinth.com/mod/create-avionics",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-avionics",
+            "author":"SolAstrius",
+            "tags":["Mod", "Compatibility", "Technology"]
+        },
+        {
+            "title":"Aeronautic Additions and ChunkLoader",
+            "description":"A Sable-compatible chunkloader, plus some other stuff not in the main mod",
+            "modrinth":"https://modrinth.com/mod/aeronautic-additions-and-chunkloader",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeronautic-additions-and-chunkloader",
+            "author":"DFined",
+            "tags":["Mod", "Utility", "QoL"]
+        },
+        {
+            "title":"AeroEngine",
+            "description":"AeroEngine is a Create addon that adds modular aircraft engines and a pilot HUD for flight control and navigation",
+            "modrinth":"https://modrinth.com/mod/aeroengine",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeroengine",
+            "author":"w843373525",
+            "tags":["Mod", "Transportation", "Technology", "Weapons"]
         }
+
     ]
 }
