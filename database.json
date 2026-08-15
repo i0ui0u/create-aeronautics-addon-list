@@ -12,7 +12,7 @@
     "categories": {
         "Type": ["Mod", "Resource Pack", "Datapack"],
         "Tags": ["Utility", "Compatibility", "Mechanics", "Decorations", "Port", "Adventure", "Transportation", "Equipment",
-                "Technology", "Storage", "Other", "Generation", "Tweaks", "Weapons", "QoL"]
+                "Technology", "Storage", "Other", "Generation", "Tweaks", "Weapons", "QoL", "Automatics"]
     },
     "addons": [
         {
@@ -318,7 +318,62 @@
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeroengine",
             "author":"w843373525",
             "tags":["Mod", "Transportation", "Technology", "Weapons"]
+        },
+        {
+            "title":"Create: Simulate Jet Engines | Aero Propulsion | Create Aeronautics",
+            "description":"Add jet engines of various sizes to accelerate aircraft",
+            "modrinth":"",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-simulated-jet-engines-aero-propulsion",
+            "author":"fluffy_squishy",
+            "tags":["Mod", "Transportation", "Technology", "Mechanics"]
+        },
+        {
+            "title":"Create Aeronautics: Gadgets & Gizmos",
+            "description":"A create aeronautics addon that adds new way to control and interact with physics contraptions",
+            "modrinth":"https://modrinth.com/mod/create-aeronautics-gadgets-and-gizmos",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-gadgets-and-gizmos",
+            "author":"Riieno",
+            "tags":["Mod", "Technology", "Mechanics", "QoL"]
+        },
+        {
+            "title":"Create Aeronautics: Transmission & Linkage",
+            "description":"Adds utility items such as universal joints and kinetic converters, hydraulic rod",
+            "modrinth":"https://modrinth.com/mod/create-aeronautics-transmission-linkage",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-transmission-linkage",
+            "author":"ENXV233",
+            "tags":["Mod", "Technology", "Mechanics", "Utility"]
+        },
+        {
+            "title":"Create Aeronautics: Automated Logistics",
+            "description":"Put your airships to work! Build station networks, automate docking, and run repeatable Aeronautics logistic routes across your world.",
+            "modrinth":"https://modrinth.com/mod/create-aeronautics-automated-logistics",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-automated-logistics",
+            "author":"SprocketGames",
+            "tags":["Mod", "Technology", "Transportation", "Automatics"]
+        },
+        {
+            "title":"Create Aeronautics: Vapor Trails",
+            "description":"Propeller vapor rings, wingtip trails, engine smoke and more for Create Aeronautics ships. Client-side only, works on any server.",
+            "modrinth":"https://modrinth.com/mod/create-aeronautics-vapor-trails",
+            "curseforge":"",
+            "author":"Levisnakes01",
+            "tags":["Mod", "Decorations"]
+        },
+        {
+            "title":"Create Aeronautics Addon: Plough & Roll!",
+            "description":"An Addon for Create Aeronautics that adds functionality to the Mechanical Plough and Mechanical Roller on Simulated Sable Contraptions.",
+            "modrinth":"https://modrinth.com/mod/createaeroploughroll",
+            "curseforge":"",
+            "author":"digitaldan68",
+            "tags":["Mod", "Technology", "Transportation"]
+        },
+        {
+            "title":"Create Aeronautics: Carworks",
+            "description":"An addon mod that focus on make general vehicle creation easier",
+            "modrinth":"https://modrinth.com/mod/create-aeronautics-carworks",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-carworks",
+            "author":"ifennekthefoxi",
+            "tags":["Mod", "Adventure", "Transportation", "Technology"]
         }
-
     ]
 }
