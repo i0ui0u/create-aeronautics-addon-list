@@ -374,6 +374,16 @@
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-carworks",
             "author":"ifennekthefoxi",
             "tags":["Mod", "Adventure", "Transportation", "Technology"]
+        },
+        {
+            "title":"Create: Kinetic Lift",
+            "description":"An addon for Sable and Create that adds real GPWS and aircraft components!",
+            "modrinth":"https://modrinth.com/mod/create-kinetic-lift",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-kinetic-lift",
+            "author":"Fly-By-Wire, atronia",
+            "tags":["Mod","Adventure","Transportation","Technology","Mechanics","Automatics"]
         }
     ]
 }
+    
+    
