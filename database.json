@@ -382,6 +382,62 @@
             "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-kinetic-lift",
             "author":"Fly-By-Wire, atronia",
             "tags":["Mod","Adventure","Transportation","Technology","Mechanics","Automatics"]
+        },
+        {
+            "title":"Create Aeronautics Physics Gantry",
+            "description":"Adds a Physics Gantry to Create Aeronautics",
+            "modrinth":"https://modrinth.com/mod/create-aeronautics-physics-gantry",
+            "curseforge":"",
+            "author":"blorbee",
+            "tags":["Mod", "Adventure", "Technology"]
+        },
+        {
+            "title":"Create Aeronautics: Claim",
+            "description":"Claim system for create aeronautics, compatible with OPAC or FTB.",
+            "modrinth":"https://modrinth.com/mod/aeronautics-claims",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeronautics-claims",
+            "author":"Mapter, Criminal_B",
+            "tags":["Mod", "QoL", "Management"]
+        },
+        {
+            "title":"Aeronautics:Wind Tunnel",
+            "description":"The project focuses on controllable airflow sources and repeatable aircraft test setups for tuning, debugging, and gameplay experiments.",
+            "modrinth":"https://modrinth.com/mod/aeronauticswind-tunnel",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/aeronautics-wind-tunnel",
+            "author":"MaxnessAWA, MyDebugStick",
+            "tags":["Mod", "Technology","Transportation", "Utility"]
+        },
+        {
+            "title":"Simulated Addition",
+            "description":"A small add-on for Create: Simulated and Create: Aeronautics. It adds highly requested features for players.",
+            "modrinth":"https://modrinth.com/mod/simulated-addition",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/simulated-addition",
+            "author":"Takkkom",
+            "tags":["Mod","Transportation", "Utility", "QoL"]
+        },
+        {
+            "title":"AeroWear",
+            "description":"AeroWear is a small integration mod for Minecraft 1.21.1 that allows you to wear the Aviator's Goggles from Create Aeronautics in a dedicated Curios API head slot.",
+            "modrinth":"https://modrinth.com/mod/aerowear",
+            "curseforge":"",
+            "author":"shu4y",
+            "tags":["Mod","Equipment","Utility"]
+        },
+        {
+            "title":"vestalihy",
+            "description":"Vestalihy – a mod that adds tank sights for Create Big Cannons, Create Aeronautics, and Sable, with support for sight tilt adjustment via pitch.",
+            "modrinth":"https://modrinth.com/mod/vestalihy",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/vestalihy",
+            "author":"BABUZOVA, R1FoM_",
+            "tags":["Mod","Equipment","Utility", "Technology"]
+        },
+        {
+            "title":"Create: Tow & Haul",
+            "description":"Towing gear for Create physics vehicles",
+            "modrinth":"https://modrinth.com/mod/create-tow-haul",
+            "curseforge":"https://www.curseforge.com/minecraft/mc-mods/create-tow-haul",
+            "author":"Danzy_189",
+            "tags":["Mod", "Technology", "Decorations", "Transportation"]
         }
     ]
 }
