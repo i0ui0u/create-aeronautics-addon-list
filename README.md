@@ -1,6 +1,7 @@
 # create-aeronautics-addon-list
 
-# UNDER RECONSTRUCTION
+# New version is being made
+(this one is still maintained)
 
 
 Addon list for Create: Aeronautics with public contribution
